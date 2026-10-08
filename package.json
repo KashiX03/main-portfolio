@@ -1,7 +1,7 @@
 {
   "name": "my-portfolio",
   "version": "1.0.0",
-  "description": "A plain HTML, CSS, and JavaScript foundation. The HTML body is intentionally empty.",
+  "description": "A personal portfolio built with HTML, CSS, JavaScript, and Vite.",
   "private": true,
   "scripts": {
     "dev": "vite --host 127.0.0.1",

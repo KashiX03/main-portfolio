@@ -1,12 +1,13 @@
 # Portfolio
 
-A plain HTML, CSS, and JavaScript foundation. The HTML body is intentionally empty.
+A plain HTML, CSS, and JavaScript portfolio with a sticky header and responsive hero.
 
 ## Files
 
 - `index.html` — document metadata and links to the stylesheet, script, and favicon.
 - `css/fonts.css` — local Helvetica Now Display font faces.
 - `css/styles.css` — basic styles and a starting point for future styling.
+- `css/hero.css` — header, mobile menu, hero layout, and floating decorations.
 - `js/main.js` — starting point for future interactions.
 - `js/swiper.js` — Swiper slider setup and styles.
 - `assets/images/` — photos and other images.
@@ -38,3 +39,14 @@ inside the same container: `.swiper-button-prev`, `.swiper-button-next`, and
 
 Adjust slider options in `js/swiper.js`. See the
 [Swiper setup guide](https://swiperjs.com/get-started) for the markup structure.
+
+## Header and hero
+
+The header switches to a hamburger menu at `991px` and below. The menu closes on
+Escape, outside clicks, or link clicks. Decorative circles float gently, with
+animation disabled when reduced motion is preferred.
+
+The hero uses the existing global font classes, color variables, and `.max-w`
+container. Desktop and mobile portraits switch through a `<picture>` element.
+Navigation and buttons target future sections with IDs `about`, `services`,
+`projects`, and `contact`; only the header and hero are implemented so far.

@@ -94,7 +94,7 @@ select {
   font-weight: 700;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 980px) {
   .max-w {
     padding-inline: 16px;
   }

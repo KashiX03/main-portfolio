@@ -8,7 +8,111 @@
     <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/hero.css" />
     <script type="module" src="js/main.js"></script>
   </head>
-  <body></body>
+  <body>
+    <header class="site-header">
+      <div class="header-inner max-w">
+        <div class="header-shell">
+          <button
+            class="menu-toggle"
+            type="button"
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="site-navigation"
+          >
+            <span></span><span></span><span></span>
+          </button>
+          <nav
+            class="site-navigation"
+            id="site-navigation"
+            aria-label="Main navigation"
+          >
+            <div class="nav-content">
+              <ul class="nav-list fs-20 tp">
+                <li>
+                  <a class="nav-link is-active" href="#home" aria-current="page"
+                    >Home</a
+                  >
+                </li>
+                <li><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-logo">
+                  <a href="#home" aria-label="Erwin's portfolio home"
+                    ><img
+                      src="assets/icons/erwnjshb.svg"
+                      alt="erwnjshb"
+                      width="132"
+                      height="32"
+                  /></a>
+                </li>
+                <li class="nav-services">
+                  <a class="nav-link" href="#services">Services</a>
+                </li>
+                <li class="nav-projects">
+                  <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li><a class="nav-link" href="#contact">Contact</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <div class="hero-decor max-w" aria-hidden="true">
+          <div class="hero-circle hero-circle-small"></div>
+          <div class="hero-circle hero-circle-large"></div>
+          <div class="hero-circle hero-circle-medium"></div>
+          <img
+            class="hero-dots"
+            src="assets/images/tone-16-dots.png"
+            alt=""
+            width="48"
+            height="48"
+          />
+        </div>
+        <div class="hero-inner max-w">
+          <div class="hero-copy">
+            <p class="hero-intro fs-20 fs--16 tp">Hey, I’m Erwin</p>
+            <h1 class="hero-heading tp" id="hero-title">
+              <span>SHOPIFY</span><span class="ts"> DEVELOPER</span>
+            </h1>
+            <p class="hero-description fs-20 fs--16 tp">
+              Shopify developer focused on building responsive, high-performing
+              storefronts with clean code, smooth functionality, and a polished
+              user experience.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary fs-16 tw" href="#contact"
+                >CONTACT ME<img
+                  src="assets/icons/button-arrow.svg"
+                  alt=""
+                  width="18"
+                  height="16"
+              /></a>
+              <a class="button button-secondary fs-16 tp" href="#services"
+                ><span class="button-desktop-label">SERVICES</span
+                ><span class="button-mobile-label">VIEW PROJECTS</span></a
+              >
+            </div>
+          </div>
+          <picture class="hero-portrait">
+            <source
+              media="(max-width: 980px)"
+              srcset="assets/images/hero-profile-mobile-2.png"
+            />
+            <img
+              src="assets/images/hero-profile-desktop.png"
+              alt="Erwin Profile"
+              width="1416"
+              height="1788"
+              fetchpriority="high"
+            />
+          </picture>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
