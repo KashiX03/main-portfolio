@@ -1,4 +1,11 @@
 /* Base styles. Add portfolio styles here as the site grows. */
+:root {
+  --color-primary: #c56255;
+  --color-secondary: #ffe1d4;
+  --text-primary: #1f1f1f;
+  --text-secondary: #c56255;
+}
+
 *,
 *::before,
 *::after {
@@ -7,8 +14,7 @@
 
 body {
   margin: 0;
-  font-family: system-ui, sans-serif;
-  line-height: 1.5;
+  font-family: "Helvetica Now Display", Arial, sans-serif;
 }
 
 img,
@@ -22,4 +28,91 @@ input,
 textarea,
 select {
   font: inherit;
+}
+
+.swiper * {
+  box-sizing: border-box;
+}
+.swiper {
+  padding: 0;
+  margin: 0;
+}
+.max-w {
+  width: 100%;
+  max-width: 1188px;
+  padding-inline: 50px;
+  margin-inline: auto;
+}
+.hero-heading {
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%; /* 70px */
+  letter-spacing: -0.7px;
+}
+.section-heading {
+  font-size: 40px;
+  font-style: normal;
+  line-height: 100%;
+  letter-spacing: -0.4px;
+}
+.fs-20 {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.fs-18 {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+}
+.fs-16 {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+}
+
+.tp {
+  color: var(--text-primary);
+}
+.ts {
+  color: var(--text-secondary);
+}
+.tw {
+  color: #fff;
+}
+.t-med {
+  font-weight: 500;
+}
+.t-light {
+  font-weight: 300;
+}
+.t-bold {
+  font-weight: 700;
+}
+
+@media (max-width: 991px) {
+  .max-w {
+    padding-inline: 16px;
+  }
+  .hero-heading {
+    font-size: 48px;
+    letter-spacing: -0.48px;
+  }
+  .section-heading {
+    font-size: 36px;
+    letter-spacing: -0.36px;
+  }
+  .fs--16 {
+    font-size: 16px;
+  }
+  .fs-14 {
+    font-size: 14px;
+  }
+  .fs-13 {
+    font-size: 13px;
+  }
 }
