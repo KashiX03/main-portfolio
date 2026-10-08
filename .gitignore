@@ -1,0 +1,13 @@
+# Operating system files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Local dependencies and build output
+node_modules/
+dist/
+
+# Local environment variables
+.env
+.env.*
+!.env.example

@@ -1,0 +1,12 @@
+{
+  "name": "my-portfolio",
+  "version": "1.0.0",
+  "description": "A plain HTML, CSS, and JavaScript foundation. The HTML body is intentionally empty.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
