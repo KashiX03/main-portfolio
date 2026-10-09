@@ -177,6 +177,7 @@
 
   .service-tags li {
     padding: 1px 9px;
+    max-width: max-content;
   }
 
   .services-controls {
