@@ -4,12 +4,20 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-// Module scripts run after the HTML is parsed. An empty page needs no slider.
+// Module scripts run after the HTML and its slide cards are parsed.
 document.querySelectorAll(".swiper").forEach((slider) => {
+  const isServicesSlider = slider.classList.contains("services-slider");
   new Swiper(slider, {
     modules: [A11y, Keyboard, Navigation, Pagination],
-    slidesPerView: 1,
-    spaceBetween: 24,
+    slidesPerView: isServicesSlider ? "auto" : 1,
+    spaceBetween: isServicesSlider ? 16 : 24,
+    speed: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? 0 : 400,
+    breakpoints: isServicesSlider ? {
+      981: {
+        slidesPerView: 3,
+        spaceBetween: 16,
+      },
+    } : undefined,
     watchOverflow: true,
     keyboard: {
       enabled: true,
@@ -17,6 +25,7 @@ document.querySelectorAll(".swiper").forEach((slider) => {
     },
     // Keep controls scoped to this slider so multiple sliders work independently.
     navigation: {
+      addIcons: !isServicesSlider,
       nextEl: slider.querySelector(".swiper-button-next"),
       prevEl: slider.querySelector(".swiper-button-prev"),
     },

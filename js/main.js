@@ -1,4 +1,6 @@
 import "./swiper.js";
+import "./contact.js";
+import "./navigation.js";
 
 const headerShell = document.querySelector(".header-shell");
 const menuToggle = document.querySelector(".menu-toggle");

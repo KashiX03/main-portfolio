@@ -47,7 +47,7 @@ button:focus-visible {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-width: 132px;
+  width: 100%;
   min-height: 68px;
   padding: 12px 20px;
   border-radius: 999px;
@@ -71,9 +71,7 @@ button:focus-visible {
   height: auto;
   margin-inline: auto;
 }
-.menu-toggle,
-.nav-projects,
-.button-mobile-label {
+.menu-toggle {
   display: none;
 }
 
@@ -329,16 +327,11 @@ button:focus-visible {
   }
   .nav-link.is-active {
     background: transparent;
-    color: var(--text-primary);
+    color: var(--text-secondary);
+    font-weight: 700;
   }
-  .nav-logo,
-  .nav-services,
-  .button-desktop-label {
+  .nav-logo {
     display: none;
-  }
-  .nav-projects,
-  .button-mobile-label {
-    display: block;
   }
 
   .hero {

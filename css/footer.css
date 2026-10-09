@@ -1,0 +1,152 @@
+.site-footer {
+  padding-block: 38px 76px;
+  background: #f9e6dd;
+}
+
+.footer-main {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-areas: "logo navigation" "description navigation" "socials navigation";
+  column-gap: 48px;
+}
+
+.footer-logo {
+  grid-area: logo;
+  width: 387px;
+  max-width: 100%;
+}
+
+.footer-logo img {
+  width: 100%;
+  height: auto;
+}
+
+.footer-description {
+  grid-area: description;
+  max-width: 440px;
+  margin: 56px 0 16px;
+  color: #595959;
+  line-height: 1.45;
+}
+
+.footer-navigation {
+  grid-area: navigation;
+  align-self: start;
+  margin-top: 86px;
+}
+
+.footer-links,
+.footer-socials {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.footer-links {
+  gap: 54px;
+}
+
+.footer-links a:hover {
+  color: var(--text-secondary);
+}
+
+.footer-mobile-link {
+  display: none;
+}
+
+.footer-socials {
+  grid-area: socials;
+  gap: 21px;
+}
+
+.footer-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: #f2cfbf;
+}
+
+.footer-social[href]:hover {
+  background: var(--color-secondary);
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  margin-top: 22px;
+  padding-top: 24px;
+  border-top: 1px solid #dfaaa0;
+  color: #595959;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+@media (max-width: 980px) {
+  .site-footer {
+    padding-block: 30px 42px;
+  }
+
+  .footer-main {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas: "logo" "description" "navigation" "socials";
+  }
+
+  .footer-logo {
+    width: 280px;
+  }
+
+  .footer-description {
+    margin: 22px 0 24px;
+    line-height: 1.6;
+  }
+
+  .footer-navigation {
+    margin-top: 0;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .footer-desktop-link {
+    display: none;
+  }
+
+  .footer-mobile-link {
+    display: list-item;
+  }
+
+  .footer-socials {
+    gap: 12px;
+    margin-top: 18px;
+  }
+
+  .footer-social {
+    width: 34px;
+    height: 34px;
+  }
+
+  .footer-social img {
+    width: 21px;
+    height: 21px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 4px;
+    margin-top: 22px;
+    padding-top: 24px;
+    font-size: 12px;
+  }
+}

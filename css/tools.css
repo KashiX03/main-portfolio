@@ -1,0 +1,127 @@
+.tools {
+  padding-block: 40px 36px;
+  text-align: center;
+}
+
+.tools-eyebrow {
+  margin: 0 0 18px;
+}
+
+.tools-heading {
+  margin: 0 0 40px;
+}
+
+.tools-heading-accent {
+  font-style: italic;
+}
+
+.tools-list {
+  display: grid;
+  grid-template-columns: repeat(4, 96px);
+  justify-content: center;
+  gap: 42px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.tool-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 116px;
+  padding: 20px 12px;
+  border-radius: 36px;
+  background: #fffbf9;
+  box-shadow: 5px 5px 16px #c562551a;
+}
+
+.tool-icon {
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 4px 9px #1f1f1f21;
+}
+
+.tool-icon img {
+  height: auto;
+}
+
+.tool-logo-figma {
+  width: 24px;
+}
+
+.tool-logo-vscode,
+.tool-logo-photoshop,
+.tool-logo-shopify {
+  width: 26px;
+}
+
+.tool-percentage {
+  margin: 8px 0 0;
+}
+
+.tool-name {
+  margin: 10px 0 0;
+}
+
+.tools-contact {
+  display: none;
+}
+
+@media (max-width: 980px) {
+  .tools {
+    padding-block: 24px 18px;
+  }
+
+  .tools-eyebrow {
+    display: none;
+  }
+
+  .tools-heading {
+    margin-bottom: 24px;
+    text-align: left;
+  }
+
+  .tools-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px 12px;
+  }
+
+  .tool-card {
+    min-height: 138px;
+    padding: 20px 12px 24px;
+    border-radius: 22px;
+  }
+
+  .tool-icon {
+    width: 72px;
+    height: 72px;
+  }
+
+  .tool-logo-figma {
+    width: 30px;
+  }
+
+  .tool-logo-vscode {
+    width: 32px;
+  }
+
+  .tool-logo-photoshop {
+    width: 40px;
+  }
+
+  .tool-logo-shopify {
+    width: 34px;
+  }
+
+  .tools-contact {
+    display: flex;
+    width: 100%;
+    min-height: 40px;
+    margin-top: 32px;
+  }
+}
