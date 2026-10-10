@@ -17,7 +17,10 @@ function setMenuOpen(open) {
 
 function syncViewport() {
   setMenuOpen(false);
-  secondaryButton.setAttribute("href", mobileViewport.matches ? "#projects" : "#services");
+  secondaryButton.setAttribute(
+    "href",
+    mobileViewport.matches ? "#services" : "#services",
+  );
 }
 
 menuToggle.addEventListener("click", () => {
@@ -29,11 +32,15 @@ navigation.addEventListener("click", (event) => {
 });
 
 document.addEventListener("click", (event) => {
-  if (mobileViewport.matches && !headerShell.contains(event.target)) setMenuOpen(false);
+  if (mobileViewport.matches && !headerShell.contains(event.target))
+    setMenuOpen(false);
 });
 
 document.addEventListener("keydown", (event) => {
-  if (event.key === "Escape" && menuToggle.getAttribute("aria-expanded") === "true") {
+  if (
+    event.key === "Escape" &&
+    menuToggle.getAttribute("aria-expanded") === "true"
+  ) {
     setMenuOpen(false);
     menuToggle.focus();
   }
